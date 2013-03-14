@@ -1,0 +1,12 @@
+
+		<form action="/signup" method="post" class="form-signin">
+        <h2 class="form-signin-heading">Create Account</h2>
+        <% if @message %>
+			<h4><%= @message %></h4>
+		<% end %>
+        <input type="text" class="input-block-level" placeholder="Email address" name="signup[email]">
+        <input type="text" class="input-block-level" placeholder="Username" name="signup[username]">
+        <input type="password" class="input-block-level" placeholder="Password" name="signup[password]">
+     	<input type="password" class="input-block-level" placeholder="Password Again" name="password_again">
+        <button class="btn btn-large btn-primary" type="submit">Create Account</button>
+ 	</form>

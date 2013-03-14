@@ -1,0 +1,14 @@
+    <div class="container">
+
+      <form class="form-signin" method="post" action="/login">
+        <h2 class="form-signin-heading">Please sign in</h2>
+        <% if @message %>
+      <h4><%= @message %></h4>
+    <% end %>
+        <input type="text" name="login[email]" class="input-block-level" placeholder="Email address">
+        <input type="password" class="input-block-level" placeholder="Password" name="login[password]">
+        <button class="btn btn-large btn-primary" type="submit">Sign in</button>
+      </form>
+      <p>New to long.er? <a href="/signup">Create Account</a></p>
+
+    </div>
